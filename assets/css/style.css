@@ -579,7 +579,7 @@ a.portfolio-card {
 .portfolio-thumb {
   width: 100%;
   aspect-ratio: 16/10;
-  background: var(--dark);
+  background: #1a5cb5;
   display: flex;
   align-items: center;
   justify-content: center;
