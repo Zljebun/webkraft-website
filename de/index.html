@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebKraft - Professionelles Webdesign</title>
+  <meta name="description" content="Professionelle Webseiten für kleine Unternehmen und Handwerker. Günstige Preise, schnelle Lieferung, kostenloses Hosting.">
+  <meta property="og:title" content="WebKraft - Professionelles Webdesign">
+  <meta property="og:description" content="Professionelle Webseiten für kleine Unternehmen. Günstige Preise, schnelle Lieferung.">
+  <meta property="og:type" content="website">
+  <link rel="alternate" hreflang="bs" href="/">
+  <link rel="alternate" hreflang="en" href="/en/">
+  <link rel="alternate" hreflang="de" href="/de/">
+  <link rel="alternate" hreflang="hr" href="/hr/">
+  <link rel="alternate" hreflang="sr" href="/sr/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/de/" class="logo"><span>Web</span>Kraft</a>
+      <nav class="nav" id="nav">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#wartung">Wartung</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <button class="lang-switch-btn" id="langBtn" aria-label="Sprache ändern">DE ▾</button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/">Bosanski</a>
+            <a href="/hr/">Hrvatski</a>
+            <a href="/sr/">Srpski</a>
+            <a href="/en/">English</a>
+            <a href="/de/">Deutsch</a>
+          </div>
+        </div>
+        <a href="#kontakt" class="btn btn-primary">Kontaktieren Sie uns</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Ihr Unternehmen verdient eine<br><span class="highlight">professionelle Webseite</span></h1>
+      <p>Wir erstellen moderne, schnelle und responsive Webseiten für kleine Unternehmen und Handwerker. Ohne Komplikationen, zu günstigen Preisen.</p>
+      <div class="hero-buttons">
+        <a href="#leistungen" class="btn btn-primary">Pakete ansehen</a>
+        <a href="#kontakt" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: #fff;">Kostenlose Beratung</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="number">€0</div>
+          <div class="label">Hosting-Kosten</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number">3-7</div>
+          <div class="label">Tage Lieferzeit</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number">100%</div>
+          <div class="label">Responsives Design</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="leistungen">
+    <div class="container text-center">
+      <span class="section-label">Leistungen</span>
+      <h2 class="section-title">Wählen Sie das passende Paket</h2>
+      <p class="section-subtitle">Jedes Paket beinhaltet kostenloses Hosting, HTTPS-Zertifikat und responsives Design.</p>
+      <div class="packages-grid">
+        <div class="package-card fade-in">
+          <div class="package-icon">🚀</div>
+          <h3>Starter</h3>
+          <div class="package-price">€130 - €180</div>
+          <div class="package-price-note">Einmalige Zahlung</div>
+          <ul class="package-features">
+            <li>Eine Seite (Landing Page)</li>
+            <li>Bis zu 5 Abschnitte</li>
+            <li>Responsives Design</li>
+            <li>Kontaktformular</li>
+            <li>Grundlegende SEO-Optimierung</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Bestellen</a>
+        </div>
+        <div class="package-card featured fade-in" data-badge="Am beliebtesten">
+          <div class="package-icon">⭐</div>
+          <h3>Standard</h3>
+          <div class="package-price">€230 - €310</div>
+          <div class="package-price-note">Einmalige Zahlung</div>
+          <ul class="package-features">
+            <li>Bis zu 5 Seiten</li>
+            <li>Responsives Design</li>
+            <li>Kontaktformular</li>
+            <li>Bildergalerie</li>
+            <li>Google Maps Integration</li>
+            <li>SEO-Optimierung</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-primary">Bestellen</a>
+        </div>
+        <div class="package-card fade-in">
+          <div class="package-icon">💎</div>
+          <h3>Premium</h3>
+          <div class="package-price">€410 - €615</div>
+          <div class="package-price-note">Einmalige Zahlung</div>
+          <ul class="package-features">
+            <li>Bis zu 10 Seiten</li>
+            <li>Alles aus Standard</li>
+            <li>Blog-Bereich</li>
+            <li>Erweitertes Design</li>
+            <li>Erweiterte SEO-Optimierung</li>
+            <li>Social-Media-Integration</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Bestellen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="ablauf">
+    <div class="container text-center">
+      <span class="section-label">Ablauf</span>
+      <h2 class="section-title">So arbeiten wir</h2>
+      <p class="section-subtitle">Von der Idee zur fertigen Webseite in 4 einfachen Schritten.</p>
+      <div class="process-grid">
+        <div class="process-step fade-in">
+          <div class="process-number">1</div>
+          <h3>Beratung</h3>
+          <p>Wir lernen Ihr Unternehmen, Ihre Ziele und Bedürfnisse kennen. Kostenlose Beratung ohne Verpflichtungen.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">2</div>
+          <h3>Design</h3>
+          <p>Wir erstellen ein visuelles Konzept, das auf Ihre Marke und Branche zugeschnitten ist.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">3</div>
+          <h3>Entwicklung</h3>
+          <p>Wir verwandeln das Design in eine schnelle, responsive Webseite, optimiert für alle Geräte.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">4</div>
+          <h3>Launch</h3>
+          <p>Wir veröffentlichen Ihre Webseite, verbinden Ihre Domain und stellen sicher, dass alles perfekt funktioniert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container text-center">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">Unsere Arbeiten</h2>
+      <p class="section-subtitle">Sehen Sie sich einige unserer abgeschlossenen Projekte an.</p>
+      <div class="portfolio-grid">
+        <div class="portfolio-card fade-in">
+          <div class="portfolio-thumb"><span class="placeholder">datamaks.net</span></div>
+          <div class="portfolio-info">
+            <h3>Datamaks.net</h3>
+            <p>Unternehmenswebseite für eine Beratungsfirma. Modernes Design, mehrsprachige Unterstützung, SEO-Optimierung.</p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Präsentation</span>
+              <span class="portfolio-tag">Mehrsprachig</span>
+              <span class="portfolio-tag">SEO</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card fade-in">
+          <div class="portfolio-thumb"><span class="placeholder">Ihr Projekt?</span></div>
+          <div class="portfolio-info">
+            <h3>Ihr Projekt</h3>
+            <p>Kontaktieren Sie uns und werden Sie unser nächster zufriedener Kunde.</p>
+            <div class="portfolio-tags"><span class="portfolio-tag">Wartet auf Sie</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <div class="container text-center">
+      <span class="section-label">Warum wir</span>
+      <h2 class="section-title">Ihre Vorteile</h2>
+      <p class="section-subtitle">Wir konzentrieren uns auf das, was für Ihr Unternehmen wichtig ist.</p>
+      <div class="why-grid">
+        <div class="why-card fade-in"><div class="why-icon">💰</div><h3>Kostenloses Hosting</h3><p>Keine monatlichen Hosting-Kosten. Ihre Webseite ist ohne versteckte Gebühren online.</p></div>
+        <div class="why-card fade-in"><div class="why-icon">⚡</div><h3>Schnelle Lieferung</h3><p>Fertige Webseite innerhalb von 3 bis 14 Tagen, je nach Paket und Komplexität.</p></div>
+        <div class="why-card fade-in"><div class="why-icon">📱</div><h3>Responsives Design</h3><p>Ihre Webseite sieht auf allen Geräten perfekt aus - Handy, Tablet und Desktop.</p></div>
+        <div class="why-card fade-in"><div class="why-icon">🔒</div><h3>HTTPS-Sicherheit</h3><p>Kostenloses SSL-Zertifikat inklusive. Ihre Besucher sind geschützt.</p></div>
+        <div class="why-card fade-in"><div class="why-icon">🎯</div><h3>SEO-Optimierung</h3><p>Ihre Webseite ist für die Google-Suche optimiert, damit Kunden Sie leicht finden.</p></div>
+        <div class="why-card fade-in"><div class="why-icon">🤝</div><h3>Support</h3><p>Wir sind für Fragen und Änderungen erreichbar. Ihr Erfolg ist unser Erfolg.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="maintenance" id="wartung">
+    <div class="container text-center">
+      <span class="section-label">Wartung</span>
+      <h2 class="section-title">Monatliche Wartung</h2>
+      <p class="section-subtitle">Überlassen Sie uns die Pflege Ihrer Webseite. Konzentrieren Sie sich auf Ihr Geschäft.</p>
+      <div class="maintenance-grid">
+        <div class="maint-card fade-in">
+          <h3>Basic</h3>
+          <div class="maint-price">€15</div>
+          <div class="maint-price-period">pro Monat</div>
+          <ul class="maint-features">
+            <li>Bis zu 2 Änderungen/Monat</li>
+            <li>Funktionsprüfung</li>
+            <li>Datensicherung</li>
+            <li>E-Mail-Support</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Auswählen</a>
+        </div>
+        <div class="maint-card fade-in">
+          <h3>Standard</h3>
+          <div class="maint-price">€25</div>
+          <div class="maint-price-period">pro Monat</div>
+          <ul class="maint-features">
+            <li>Bis zu 5 Änderungen/Monat</li>
+            <li>Alles aus Basic</li>
+            <li>Inhaltsaktualisierungen</li>
+            <li>Monatlicher Bericht</li>
+            <li>WhatsApp-Support</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-primary">Auswählen</a>
+        </div>
+        <div class="maint-card fade-in">
+          <h3>Premium</h3>
+          <div class="maint-price">€40</div>
+          <div class="maint-price-period">pro Monat</div>
+          <ul class="maint-features">
+            <li>Unbegrenzte kleine Änderungen</li>
+            <li>Alles aus Standard</li>
+            <li>Neue Abschnitte hinzufügen</li>
+            <li>Prioritäts-Support (24h)</li>
+            <li>SEO-Monitoring</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Auswählen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Bereit für eine professionelle Webseite?</h2>
+      <p>Kostenlose Beratung ohne Verpflichtungen. Kontaktieren Sie uns und besprechen wir Ihre Bedürfnisse.</p>
+      <a href="#kontakt" class="btn btn-white">Gespräch vereinbaren</a>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Kontakt</span>
+        <h2 class="section-title">Kontaktieren Sie uns</h2>
+        <p class="section-subtitle" style="margin-bottom: 0;">Senden Sie uns eine Nachricht oder kontaktieren Sie uns direkt.</p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-list">
+            <div class="contact-info-item"><div class="contact-info-icon">✉️</div><div><h4>E-Mail</h4><a href="mailto:info@datamaks.net">info@datamaks.net</a></div></div>
+            <div class="contact-info-item"><div class="contact-info-icon">📱</div><div><h4>WhatsApp / Viber</h4><p>+387 XX XXX XXX</p></div></div>
+            <div class="contact-info-item"><div class="contact-info-icon">📍</div><div><h4>Standort</h4><p>Bosnien und Herzegowina</p></div></div>
+            <div class="contact-info-item"><div class="contact-info-icon">📸</div><div><h4>Instagram</h4><a href="https://instagram.com/webkraft.ba" target="_blank">@webkraft.ba</a></div></div>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group"><label for="name">Ihr Name</label><input type="text" id="name" name="name" required placeholder="Vor- und Nachname"></div>
+          <div class="form-group"><label for="email">E-Mail-Adresse</label><input type="email" id="email" name="email" required placeholder="ihre@email.com"></div>
+          <div class="form-group">
+            <label for="package">Welches Paket interessiert Sie?</label>
+            <select id="package" name="package">
+              <option value="">Paket auswählen</option>
+              <option value="starter">Starter (€130-€180)</option>
+              <option value="standard">Standard (€230-€310)</option>
+              <option value="premium">Premium (€410-€615)</option>
+              <option value="wartung">Nur Wartung</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="message">Nachricht</label><textarea id="message" name="message" placeholder="Beschreiben Sie Ihr Projekt oder Ihre Frage..."></textarea></div>
+          <button type="submit" class="btn btn-primary">Nachricht senden</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><span>Web</span>Kraft</div>
+          <p>Wir erstellen professionelle Webseiten für kleine Unternehmen und Handwerker. Günstige Preise, schnelle Lieferung, kostenloses Hosting.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/webkraft.ba" target="_blank" aria-label="Instagram">📸</a>
+            <a href="#" target="_blank" aria-label="Facebook">📘</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="#leistungen">Leistungen</a>
+          <a href="#ablauf">Ablauf</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#wartung">Wartung</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <h4>Pakete</h4>
+          <a href="#leistungen">Starter - Landing Page</a>
+          <a href="#leistungen">Standard - Präsentation</a>
+          <a href="#leistungen">Premium - Erweitert</a>
+          <a href="#wartung">Monatliche Wartung</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 WebKraft. Alle Rechte vorbehalten.</span>
+        <span>Powered by WebKraft</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    menuToggle.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
+    const langBtn = document.getElementById('langBtn');
+    const langDropdown = document.getElementById('langDropdown');
+    langBtn.addEventListener('click', (e) => { e.stopPropagation(); langDropdown.classList.toggle('open'); });
+    document.addEventListener('click', () => langDropdown.classList.remove('open'));
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) { e.preventDefault(); const t = document.querySelector(this.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth' }); });
+    });
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    const form = document.querySelector('.contact-form');
+    if (form) { form.addEventListener('submit', async (e) => { e.preventDefault(); try { const r = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } }); if (r.ok) window.location.href = '/thank-you.html'; } catch (err) { alert('Fehler beim Senden. Bitte versuchen Sie es erneut.'); } }); }
+  </script>
+</body>
+</html>

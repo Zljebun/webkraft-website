@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebKraft - Profesionalna izrada web stranica</title>
+  <meta name="description" content="Profesionalna izrada web stranica za male biznise i obrte. Pristupačne cijene, brza isporuka, besplatan hosting.">
+  <meta name="keywords" content="izrada web stranica, web dizajn, web stranice, landing page, BiH, Bosna i Hercegovina">
+  <meta property="og:title" content="WebKraft - Profesionalna izrada web stranica">
+  <meta property="og:description" content="Profesionalna izrada web stranica za male biznise i obrte. Pristupačne cijene, brza isporuka.">
+  <meta property="og:type" content="website">
+  <link rel="alternate" hreflang="bs" href="/">
+  <link rel="alternate" hreflang="en" href="/en/">
+  <link rel="alternate" hreflang="de" href="/de/">
+  <link rel="alternate" hreflang="hr" href="/hr/">
+  <link rel="alternate" hreflang="sr" href="/sr/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo"><span>Web</span>Kraft</a>
+      <nav class="nav" id="nav">
+        <a href="#usluge">Usluge</a>
+        <a href="#proces">Kako radimo</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#odrzavanje">Održavanje</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <button class="lang-switch-btn" id="langBtn" aria-label="Promijeni jezik">BS ▾</button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/">Bosanski</a>
+            <a href="/hr/">Hrvatski</a>
+            <a href="/sr/">Srpski</a>
+            <a href="/en/">English</a>
+            <a href="/de/">Deutsch</a>
+          </div>
+        </div>
+        <a href="#kontakt" class="btn btn-primary">Kontaktirajte nas</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Otvori meni">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Vaš biznis zaslužuje<br><span class="highlight">profesionalnu web stranicu</span></h1>
+      <p>Izrađujemo moderne, brze i responzivne web stranice za male biznise i obrte. Bez komplikacija, po pristupačnim cijenama.</p>
+      <div class="hero-buttons">
+        <a href="#usluge" class="btn btn-primary">Pogledajte pakete</a>
+        <a href="#kontakt" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: #fff;">Besplatna konsultacija</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="number">0 KM</div>
+          <div class="label">Trošak hostinga</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number">3-7</div>
+          <div class="label">Dana za isporuku</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number">100%</div>
+          <div class="label">Responzivan dizajn</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / Packages -->
+  <section class="services" id="usluge">
+    <div class="container text-center">
+      <span class="section-label">Usluge</span>
+      <h2 class="section-title">Izaberite paket koji vam odgovara</h2>
+      <p class="section-subtitle">Svaki paket uključuje besplatan hosting, HTTPS certifikat i responzivan dizajn.</p>
+      <div class="packages-grid">
+
+        <!-- Starter -->
+        <div class="package-card fade-in">
+          <div class="package-icon">🚀</div>
+          <h3>Starter</h3>
+          <div class="package-price">250 - 350 KM</div>
+          <div class="package-price-note">Jednokratna uplata</div>
+          <ul class="package-features">
+            <li>Jedna stranica (landing page)</li>
+            <li>Do 5 sekcija</li>
+            <li>Responzivan dizajn</li>
+            <li>Kontakt forma</li>
+            <li>Osnovna SEO optimizacija</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Naručite</a>
+        </div>
+
+        <!-- Standard -->
+        <div class="package-card featured fade-in" data-badge="Najpopularniji">
+          <div class="package-icon">⭐</div>
+          <h3>Standard</h3>
+          <div class="package-price">450 - 600 KM</div>
+          <div class="package-price-note">Jednokratna uplata</div>
+          <ul class="package-features">
+            <li>Do 5 stranica</li>
+            <li>Responzivan dizajn</li>
+            <li>Kontakt forma</li>
+            <li>Galerija slika</li>
+            <li>Google Maps integracija</li>
+            <li>SEO optimizacija</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-primary">Naručite</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="package-card fade-in">
+          <div class="package-icon">💎</div>
+          <h3>Premium</h3>
+          <div class="package-price">800 - 1.200 KM</div>
+          <div class="package-price-note">Jednokratna uplata</div>
+          <ul class="package-features">
+            <li>Do 10 stranica</li>
+            <li>Sve iz Standard paketa</li>
+            <li>Blog sekcija</li>
+            <li>Napredniji dizajn</li>
+            <li>Napredna SEO optimizacija</li>
+            <li>Integracija društvenih mreža</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Naručite</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process" id="proces">
+    <div class="container text-center">
+      <span class="section-label">Proces</span>
+      <h2 class="section-title">Kako radimo</h2>
+      <p class="section-subtitle">Od ideje do gotovog sajta u 4 jednostavna koraka.</p>
+      <div class="process-grid">
+        <div class="process-step fade-in">
+          <div class="process-number">1</div>
+          <h3>Razgovor</h3>
+          <p>Upoznajemo vaš biznis, ciljeve i potrebe. Besplatna konsultacija bez obaveza.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">2</div>
+          <h3>Dizajn</h3>
+          <p>Kreiramo vizuelni koncept prilagođen vašem brendu i industriji.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">3</div>
+          <h3>Razvoj</h3>
+          <p>Pretvaramo dizajn u brzu, responzivnu web stranicu optimizovanu za sve uređaje.</p>
+        </div>
+        <div class="process-step fade-in">
+          <div class="process-number">4</div>
+          <h3>Lansiranje</h3>
+          <p>Objavljujemo vaš sajt, povezujemo domenu i osiguravamo da sve radi savršeno.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <div class="container text-center">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">Naši radovi</h2>
+      <p class="section-subtitle">Pogledajte neke od projekata koje smo realizovali.</p>
+      <div class="portfolio-grid">
+        <div class="portfolio-card fade-in">
+          <div class="portfolio-thumb">
+            <span class="placeholder">datamaks.net</span>
+          </div>
+          <div class="portfolio-info">
+            <h3>Datamaks.net</h3>
+            <p>Korporativni sajt za konsultantsku firmu. Moderan dizajn, višejezična podrška, SEO optimizacija.</p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Prezentacija</span>
+              <span class="portfolio-tag">Višejezični</span>
+              <span class="portfolio-tag">SEO</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-card fade-in">
+          <div class="portfolio-thumb">
+            <span class="placeholder">Vaš projekat?</span>
+          </div>
+          <div class="portfolio-info">
+            <h3>Vaš projekat</h3>
+            <p>Kontaktirajte nas i postanite naš sljedeći zadovoljni klijent.</p>
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Čeka na vas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="why-us">
+    <div class="container text-center">
+      <span class="section-label">Zašto mi</span>
+      <h2 class="section-title">Prednosti koje dobijate</h2>
+      <p class="section-subtitle">Fokusirani smo na ono što je bitno za vaš biznis.</p>
+      <div class="why-grid">
+        <div class="why-card fade-in">
+          <div class="why-icon">💰</div>
+          <h3>Besplatan hosting</h3>
+          <p>Nema mjesečnih troškova za hosting. Vaš sajt je online bez skrivenih naknada.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-icon">⚡</div>
+          <h3>Brza isporuka</h3>
+          <p>Gotov sajt u roku od 3 do 14 dana, zavisno od paketa i kompleksnosti.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-icon">📱</div>
+          <h3>Responzivan dizajn</h3>
+          <p>Vaš sajt izgleda savršeno na svim uređajima - mobitel, tablet i desktop.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-icon">🔒</div>
+          <h3>HTTPS sigurnost</h3>
+          <p>Besplatan SSL certifikat uključen. Vaši posjetioci su zaštićeni.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-icon">🎯</div>
+          <h3>SEO optimizacija</h3>
+          <p>Vaš sajt je optimizovan za Google pretragu da vas klijenti lakše pronađu.</p>
+        </div>
+        <div class="why-card fade-in">
+          <div class="why-icon">🤝</div>
+          <h3>Podrška</h3>
+          <p>Dostupni smo za pitanja i izmjene. Vaš uspjeh je naš uspjeh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maintenance -->
+  <section class="maintenance" id="odrzavanje">
+    <div class="container text-center">
+      <span class="section-label">Održavanje</span>
+      <h2 class="section-title">Mjesečno održavanje</h2>
+      <p class="section-subtitle">Prepustite nama brigu o vašem sajtu. Vi se fokusirajte na posao.</p>
+      <div class="maintenance-grid">
+        <div class="maint-card fade-in">
+          <h3>Basic</h3>
+          <div class="maint-price">30 KM</div>
+          <div class="maint-price-period">mjesečno</div>
+          <ul class="maint-features">
+            <li>Do 2 izmjene mjesečno</li>
+            <li>Provjera funkcionalnosti</li>
+            <li>Backup sadržaja</li>
+            <li>Email podrška</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Izaberite</a>
+        </div>
+        <div class="maint-card fade-in">
+          <h3>Standard</h3>
+          <div class="maint-price">50 KM</div>
+          <div class="maint-price-period">mjesečno</div>
+          <ul class="maint-features">
+            <li>Do 5 izmjena mjesečno</li>
+            <li>Sve iz Basic paketa</li>
+            <li>Ažuriranje sadržaja</li>
+            <li>Mjesečni izvještaj</li>
+            <li>Viber/WhatsApp podrška</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-primary">Izaberite</a>
+        </div>
+        <div class="maint-card fade-in">
+          <h3>Premium</h3>
+          <div class="maint-price">80 KM</div>
+          <div class="maint-price-period">mjesečno</div>
+          <ul class="maint-features">
+            <li>Neograničene sitne izmjene</li>
+            <li>Sve iz Standard paketa</li>
+            <li>Dodavanje novih sekcija</li>
+            <li>Prioritetna podrška (24h)</li>
+            <li>SEO praćenje</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Izaberite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Spremni za profesionalnu web stranicu?</h2>
+      <p>Besplatna konsultacija bez obaveza. Javite nam se i razgovarajmo o vašim potrebama.</p>
+      <a href="#kontakt" class="btn btn-white">Zakažite razgovor</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="kontakt">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Kontakt</span>
+        <h2 class="section-title">Javite nam se</h2>
+        <p class="section-subtitle" style="margin-bottom: 0;">Pošaljite nam poruku ili nas kontaktirajte direktno.</p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:info@datamaks.net">info@datamaks.net</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📱</div>
+              <div>
+                <h4>WhatsApp / Viber</h4>
+                <p>+387 XX XXX XXX</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <h4>Lokacija</h4>
+                <p>Bosna i Hercegovina</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📸</div>
+              <div>
+                <h4>Instagram</h4>
+                <a href="https://instagram.com/webkraft.ba" target="_blank">@webkraft.ba</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Vaše ime</label>
+            <input type="text" id="name" name="name" required placeholder="Ime i prezime">
+          </div>
+          <div class="form-group">
+            <label for="email">Email adresa</label>
+            <input type="email" id="email" name="email" required placeholder="vas@email.com">
+          </div>
+          <div class="form-group">
+            <label for="package">Koji paket vas zanima?</label>
+            <select id="package" name="package">
+              <option value="">Izaberite paket</option>
+              <option value="starter">Starter (250-350 KM)</option>
+              <option value="standard">Standard (450-600 KM)</option>
+              <option value="premium">Premium (800-1.200 KM)</option>
+              <option value="odrzavanje">Samo održavanje</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Poruka</label>
+            <textarea id="message" name="message" placeholder="Opišite nam vaš projekat ili pitanje..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Pošaljite poruku</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><span>Web</span>Kraft</div>
+          <p>Izrađujemo profesionalne web stranice za male biznise i obrte. Pristupačne cijene, brza isporuka, besplatan hosting.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/webkraft.ba" target="_blank" aria-label="Instagram">📸</a>
+            <a href="#" target="_blank" aria-label="Facebook">📘</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigacija</h4>
+          <a href="#usluge">Usluge</a>
+          <a href="#proces">Kako radimo</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#odrzavanje">Održavanje</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <h4>Paketi</h4>
+          <a href="#usluge">Starter - Landing Page</a>
+          <a href="#usluge">Standard - Prezentacija</a>
+          <a href="#usluge">Premium - Napredni sajt</a>
+          <a href="#odrzavanje">Mjesečno održavanje</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 WebKraft. Sva prava zadržana.</span>
+        <span>Powered by WebKraft</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile menu
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+
+    // Close mobile menu on link click
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => nav.classList.remove('open'));
+    });
+
+    // Language dropdown
+    const langBtn = document.getElementById('langBtn');
+    const langDropdown = document.getElementById('langDropdown');
+    langBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langDropdown.classList.toggle('open');
+    });
+    document.addEventListener('click', () => langDropdown.classList.remove('open'));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Form submission
+    const form = document.querySelector('.contact-form');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            window.location.href = '/thank-you.html';
+          }
+        } catch (err) {
+          alert('Greška pri slanju. Pokušajte ponovo.');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
