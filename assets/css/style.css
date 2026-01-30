@@ -153,6 +153,26 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
   color: var(--white);
 }
 
+.btn-demo {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  margin-top: 8px;
+}
+
+.btn-demo:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-demo.coming-soon {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+}
+
 .btn-white {
   background: var(--white);
   color: var(--primary);
