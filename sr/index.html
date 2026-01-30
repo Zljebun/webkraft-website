@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="sr">
 <head>
   <meta charset="UTF-8">
@@ -8,11 +8,11 @@
   <meta property="og:title" content="WebKraft - Profesionalna izrada web stranica">
   <meta property="og:description" content="Profesionalna izrada web stranica za mala preduzeća. Pristupačne cene, brza isporuka.">
   <meta property="og:type" content="website">
-  <link rel="alternate" hreflang="bs" href="/">
-  <link rel="alternate" hreflang="en" href="/en/">
-  <link rel="alternate" hreflang="de" href="/de/">
-  <link rel="alternate" hreflang="hr" href="/hr/">
-  <link rel="alternate" hreflang="sr" href="/sr/">
+  <link rel="alternate" hreflang="bs" href="../">
+  <link rel="alternate" hreflang="en" href="../en/">
+  <link rel="alternate" hreflang="de" href="../de/">
+  <link rel="alternate" hreflang="hr" href="../hr/">
+  <link rel="alternate" hreflang="sr" href="../sr/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 
   <header class="header" id="header">
     <div class="container">
-      <a href="/sr/" class="logo"><span>Web</span>Kraft</a>
+      <a href="../sr/" class="logo"><span>Web</span>Kraft</a>
       <nav class="nav" id="nav">
         <a href="#usluge">Usluge</a>
         <a href="#proces">Kako radimo</a>
@@ -34,11 +34,11 @@
         <div class="lang-switch">
           <button class="lang-switch-btn" id="langBtn" aria-label="Promeni jezik">SR ▾</button>
           <div class="lang-dropdown" id="langDropdown">
-            <a href="/">Bosanski</a>
-            <a href="/hr/">Hrvatski</a>
-            <a href="/sr/">Srpski</a>
-            <a href="/en/">English</a>
-            <a href="/de/">Deutsch</a>
+            <a href="../">Bosanski</a>
+            <a href="../hr/">Hrvatski</a>
+            <a href="../sr/">Srpski</a>
+            <a href="../en/">English</a>
+            <a href="../de/">Deutsch</a>
           </div>
         </div>
         <a href="#kontakt" class="btn btn-primary">Kontaktirajte nas</a>
@@ -253,7 +253,7 @@
     const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     const form = document.querySelector('.contact-form');
-    if (form) { form.addEventListener('submit', async (e) => { e.preventDefault(); try { const r = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } }); if (r.ok) window.location.href = '/thank-you.html'; } catch (err) { alert('Greška pri slanju. Pokušajte ponovo.'); } }); }
+    if (form) { form.addEventListener('submit', async (e) => { e.preventDefault(); try { const r = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } }); if (r.ok) window.location.href = '../thank-you.html'; } catch (err) { alert('Greška pri slanju. Pokušajte ponovo.'); } }); }
   </script>
 </body>
 </html>
