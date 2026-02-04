@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://webkraft.ba/</loc>
-    <xhtml:link rel="alternate" hreflang="bs" href="https://webkraft.ba/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://webkraft.ba/en/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://webkraft.ba/de/"/>
-    <xhtml:link rel="alternate" hreflang="hr" href="https://webkraft.ba/hr/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://webkraft.ba/sr/"/>
+    <loc>https://webkraft.site/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://webkraft.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webkraft.site/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://webkraft.site/de/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://webkraft.site/hr/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://webkraft.site/sr/"/>
     <lastmod>2026-01-30</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://webkraft.ba/en/</loc>
-    <xhtml:link rel="alternate" hreflang="bs" href="https://webkraft.ba/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://webkraft.ba/en/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://webkraft.ba/de/"/>
-    <xhtml:link rel="alternate" hreflang="hr" href="https://webkraft.ba/hr/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://webkraft.ba/sr/"/>
+    <loc>https://webkraft.site/en/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://webkraft.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webkraft.site/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://webkraft.site/de/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://webkraft.site/hr/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://webkraft.site/sr/"/>
     <lastmod>2026-01-30</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://webkraft.ba/de/</loc>
-    <xhtml:link rel="alternate" hreflang="bs" href="https://webkraft.ba/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://webkraft.ba/en/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://webkraft.ba/de/"/>
-    <xhtml:link rel="alternate" hreflang="hr" href="https://webkraft.ba/hr/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://webkraft.ba/sr/"/>
+    <loc>https://webkraft.site/de/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://webkraft.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webkraft.site/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://webkraft.site/de/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://webkraft.site/hr/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://webkraft.site/sr/"/>
     <lastmod>2026-01-30</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://webkraft.ba/hr/</loc>
-    <xhtml:link rel="alternate" hreflang="bs" href="https://webkraft.ba/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://webkraft.ba/en/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://webkraft.ba/de/"/>
-    <xhtml:link rel="alternate" hreflang="hr" href="https://webkraft.ba/hr/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://webkraft.ba/sr/"/>
+    <loc>https://webkraft.site/hr/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://webkraft.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webkraft.site/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://webkraft.site/de/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://webkraft.site/hr/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://webkraft.site/sr/"/>
     <lastmod>2026-01-30</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://webkraft.ba/sr/</loc>
-    <xhtml:link rel="alternate" hreflang="bs" href="https://webkraft.ba/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://webkraft.ba/en/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://webkraft.ba/de/"/>
-    <xhtml:link rel="alternate" hreflang="hr" href="https://webkraft.ba/hr/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://webkraft.ba/sr/"/>
+    <loc>https://webkraft.site/sr/</loc>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://webkraft.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webkraft.site/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://webkraft.site/de/"/>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://webkraft.site/hr/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://webkraft.site/sr/"/>
     <lastmod>2026-01-30</lastmod>
     <priority>0.9</priority>
   </url>
