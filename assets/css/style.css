@@ -830,13 +830,20 @@ a.portfolio-card {
   margin-bottom: 2px;
 }
 
-.contact-info-item p, .contact-info-item a {
+.contact-info-item p {
   font-size: 0.9rem;
   color: var(--text-light);
 }
 
-.contact-info-item a:hover {
+.contact-info-item a {
+  font-size: 0.9rem;
   color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-info-item a:hover {
+  color: var(--accent);
 }
 
 .contact-form {
