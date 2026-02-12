@@ -3,21 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X15G07WDL9"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X15G07WDL9');</script>
-  <!-- Meta Pixel -->
-  <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1288144323126908');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1288144323126908&ev=PageView&noscript=1"/></noscript>
-  <!-- End Meta Pixel -->
+  <!-- Google Analytics (deferred) -->
+  <!-- Meta Pixel (deferred to end of body for performance) -->
   <title>WebKraft - Professional Website Design</title>
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -25,14 +12,17 @@
   <meta property="og:title" content="WebKraft - Professional Website Design">
   <meta property="og:description" content="Professional website design for small businesses. Affordable prices, fast delivery.">
   <meta property="og:type" content="website">
-  <link rel="alternate" hreflang="bs" href="../">
-  <link rel="alternate" hreflang="en" href="../en/">
-  <link rel="alternate" hreflang="de" href="../de/">
-  <link rel="alternate" hreflang="hr" href="../hr/">
-  <link rel="alternate" hreflang="sr" href="../sr/">
+  <link rel="canonical" href="https://webkraft.site/en/">
+  <link rel="alternate" hreflang="bs" href="https://webkraft.site/">
+  <link rel="alternate" hreflang="en" href="https://webkraft.site/en/">
+  <link rel="alternate" hreflang="de" href="https://webkraft.site/de/">
+  <link rel="alternate" hreflang="hr" href="https://webkraft.site/hr/">
+  <link rel="alternate" hreflang="sr" href="https://webkraft.site/sr/">
+  <link rel="alternate" hreflang="x-default" href="https://webkraft.site/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -66,6 +56,7 @@
     </div>
   </header>
 
+  <main>
   <section class="hero">
     <div class="container">
       <h1>Your business deserves a<br><span class="highlight">professional website</span></h1>
@@ -390,6 +381,8 @@
     </div>
   </section>
 
+  </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -444,5 +437,18 @@
     const form = document.querySelector('.contact-form');
     if (form) { form.addEventListener('submit', async (e) => { e.preventDefault(); try { const r = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } }); if (r.ok) window.location.href = '../thank-you.html'; } catch (err) { alert('Error sending. Please try again.'); } }); }
   </script>
+
+  <!-- Deferred: GA4 + Meta Pixel -->
+  <script>
+  window.requestIdleCallback=window.requestIdleCallback||function(cb){return setTimeout(cb,1)};
+  requestIdleCallback(function(){
+    var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-X15G07WDL9';document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X15G07WDL9');
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1288144323126908');fbq('track','PageView');
+  });
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1288144323126908&ev=PageView&noscript=1"/></noscript>
+
 </body>
 </html>
