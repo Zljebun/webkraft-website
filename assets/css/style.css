@@ -664,7 +664,7 @@ a.portfolio-card {
 
 .why-us .section-label { margin-bottom: 12px; }
 .why-us .section-title { color: var(--white); }
-.why-us .section-subtitle { color: var(--text-muted); }
+.why-us .section-subtitle { color: var(--text-light); }
 
 .why-grid {
   display: grid;
@@ -737,7 +737,7 @@ a.portfolio-card {
 
 .maint-price-period {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--text-light);
   margin-bottom: 24px;
 }
 
@@ -825,8 +825,9 @@ a.portfolio-card {
   flex-shrink: 0;
 }
 
-.contact-info-item h4 {
+.contact-info-item h3 {
   font-size: 0.95rem;
+  font-weight: 600;
   margin-bottom: 2px;
 }
 
@@ -948,7 +949,7 @@ a.portfolio-card {
   background: rgba(124,58,237,0.1);
 }
 
-.footer-col h4 {
+.footer-col h3 {
   color: var(--white);
   font-size: 1rem;
   margin-bottom: 16px;
