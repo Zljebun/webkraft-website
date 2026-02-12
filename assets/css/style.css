@@ -262,7 +262,7 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
   background: transparent;
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--text-light);
+  color: var(--text);
   cursor: pointer;
   transition: all var(--transition);
 }
@@ -664,7 +664,7 @@ a.portfolio-card {
 
 .why-us .section-label { margin-bottom: 12px; }
 .why-us .section-title { color: var(--white); }
-.why-us .section-subtitle { color: var(--text-light); }
+.why-us .section-subtitle { color: var(--text-muted); }
 
 .why-grid {
   display: grid;
@@ -914,6 +914,7 @@ a.portfolio-card {
 
 .footer-brand .logo {
   margin-bottom: 16px;
+  color: var(--white);
 }
 
 .footer-brand p {
