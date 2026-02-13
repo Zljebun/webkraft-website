@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Analytics (deferred) -->
-  <!-- Meta Pixel (deferred to end of body for performance) -->
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X15G07WDL9"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X15G07WDL9');</script>
   <title>Demo sajtovi - WebKraft</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -361,11 +362,9 @@
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
 
-  <!-- Deferred: GA4 + Meta Pixel (load after page complete + 2s delay) -->
+  <!-- Deferred: Meta Pixel + event tracking -->
   <script>
-  function _wkAnalytics(){
-    var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-X15G07WDL9';document.head.appendChild(s);
-    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X15G07WDL9');
+  function _wkTracking(){
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init','1288144323126908');fbq('track','PageView');
     // Scroll section tracking
@@ -403,9 +402,8 @@
       });
     });
   }
-  function _scheduleWk(){if('requestIdleCallback' in window)requestIdleCallback(_wkAnalytics,{timeout:500});else setTimeout(_wkAnalytics,300);}
-  if(document.readyState==='complete')_scheduleWk();
-  else window.addEventListener('load',_scheduleWk);
+  if(document.readyState==='complete')setTimeout(_wkTracking,100);
+  else window.addEventListener('load',function(){setTimeout(_wkTracking,100);});
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1288144323126908&ev=PageView&noscript=1"/></noscript>
 
