@@ -382,6 +382,30 @@
     window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X15G07WDL9');
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init','1288144323126908');fbq('track','PageView');
+    // Scroll section tracking
+    var _seen={};
+    var _secs=document.querySelectorAll('section[class],footer');
+    var _obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var name=e.target.className.split(' ')[0]||e.target.tagName.toLowerCase();
+          if(!_seen[name]){
+            _seen[name]=1;
+            gtag('event','section_view',{section_name:name});
+          }
+        }
+      });
+    },{threshold:0.3});
+    _secs.forEach(function(s){_obs.observe(s);});
+    // Demo click tracking
+    document.querySelectorAll('a[target="_blank"]').forEach(function(a){
+      if(a.href.indexOf('github.io')>-1){
+        a.addEventListener('click',function(){
+          var name=a.href.replace(/.*github\.io\/([^\/]+).*/,'$1');
+          gtag('event','demo_click',{demo_name:name,link_url:a.href});
+        });
+      }
+    });
   }
   if(document.readyState==='complete')setTimeout(_wkAnalytics,2000);
   else window.addEventListener('load',function(){setTimeout(_wkAnalytics,2000);});
