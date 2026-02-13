@@ -960,7 +960,7 @@ a.portfolio-card {
   display: block;
   font-size: 0.9rem;
   color: var(--text-muted);
-  padding: 4px 0;
+  padding: 10px 0;
   transition: color var(--transition);
 }
 
