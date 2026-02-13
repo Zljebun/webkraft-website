@@ -1069,7 +1069,7 @@ a.portfolio-card {
   .container { padding: 0 16px; }
 
   .hero {
-    padding: calc(var(--header-height) + 40px) 0 60px;
+    padding: calc(var(--header-height) + 60px) 0 60px;
   }
 
   .contact-form {
