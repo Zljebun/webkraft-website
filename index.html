@@ -66,9 +66,11 @@
       <h1>Vaš biznis zaslužuje<br><span class="highlight">profesionalnu web stranicu</span></h1>
       <p>Izrađujemo moderne, brze i responzivne web stranice za male biznise i obrte. Bez komplikacija, po pristupačnim cijenama.</p>
       <div class="hero-buttons">
-        <a href="demos.html" class="btn btn-primary">Pogledajte primjere</a>
-        <a href="#usluge" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: #fff;">Pogledajte pakete</a>
-        <a href="#kontakt" class="btn btn-outline" style="border-color: rgba(255,255,255,0.3); color: #fff;">Besplatna konsultacija</a>
+        <a href="demos.html" class="btn btn-primary btn-lg">Pogledajte naše radove →</a>
+        <div class="hero-buttons-secondary">
+          <a href="#usluge" class="btn btn-ghost">Pogledajte pakete</a>
+          <a href="#kontakt" class="btn btn-ghost">Besplatna konsultacija</a>
+        </div>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
@@ -561,6 +563,52 @@
   else window.addEventListener('load',function(){setTimeout(_wkTracking,100);});
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1288144323126908&ev=PageView&noscript=1"/></noscript>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="demos.html" class="btn btn-primary">Pogledajte primjere naših radova</a>
+  </div>
+
+  <!-- Chat widget -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-options" id="chatOptions">
+      <a href="https://wa.me/436677970082" target="_blank" rel="noopener" class="chat-option whatsapp">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <a href="viber://chat?number=%2B38765469565" target="_blank" rel="noopener" class="chat-option viber">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.4 0C9.473.028 5.333.344 3.02 2.467 1.302 4.187.541 6.826.453 10.096c-.088 3.27-.198 9.401 5.737 11.033l.007.001v2.556s-.04.652.405 .786c.538.163.854-.346 1.369-.903.283-.306.674-.756.968-1.1l.002-.002c2.664.224 4.717-.287 4.95-.367.535-.184 3.564-.562 4.058-4.592.508-4.147-.243-6.762-1.593-7.94l-.002-.002c-.357-.584-.93-4.394-5.076-5.476C10.622.067 9.856.043 9.856.043l-.002-.001c.324.008 1.058.057 1.546.098zm.298 2.096c-.416-.035-.846-.064-1.15-.057-.002 0 .542.018 1.15.126 1.15.252 4.47 1.003 4.798 4.814.348 1.057.309 2.786.309 2.786l1.107-.002s.116-2.098-.386-3.476C16.783 3.884 13.81 2.773 11.698 2.096zm-.347 1.492c-1.477-.043-.69.008-.69.008 1.767.199 2.73.733 3.494 1.504.804.804 1.08 1.82 1.08 1.82l.987-.002c0-.001-.237-1.313-1.372-2.462-.677-.685-1.828-1.126-2.842-1.378-.192-.048-.392-.073-.601-.082l-.056.592zm-2.37 2.088c-.387 0-.782.164-1.068.478l-.003.003c-.26.273-.716.852-.86 1.498-.237 1.06.184 2.22.184 2.22s.732 1.726 3.264 3.554l.003.002c.086.065.16.124.22.172 2.062 1.627 3.08 1.553 3.695 1.783.544.204 1.056-.065 1.307-.38.262-.327.526-.876.526-.876s.398-.818.058-1.237c-.34-.42-1.183-.907-1.683-1.213-.545-.333-1.003-.132-1.204.096l-.45.52c-.226.243-.654.165-.654.165s-2.132-.537-3.327-2.967c0 0-.198-.406.055-.615l.013-.012c.163-.173.481-.524.608-.803.128-.279.04-.618-.17-.935-.523-.787-1.09-1.502-1.09-1.502a.94.94 0 00-.692-.4.85.85 0 00-.133 0l.001-.002h-.003c.013-.018.023-.035.034-.055l-.012.012-.017-.005z"/></svg>
+        Viber
+      </a>
+    </div>
+    <button class="chat-toggle" id="chatToggle" aria-label="Kontaktirajte nas">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+    </button>
+  </div>
+
+  <script>
+  // Sticky CTA: show after 300px scroll, hide near contact section
+  (function(){
+    var sticky=document.getElementById('stickyCta');
+    var kontakt=document.getElementById('kontakt');
+    if(!sticky)return;
+    window.addEventListener('scroll',function(){
+      var y=window.scrollY||window.pageYOffset;
+      if(y>300){
+        if(kontakt){var r=kontakt.getBoundingClientRect();if(r.top<window.innerHeight){sticky.classList.remove('visible');return;}}
+        sticky.classList.add('visible');
+      }else{sticky.classList.remove('visible');}
+    });
+  })();
+  // Chat widget toggle
+  (function(){
+    var toggle=document.getElementById('chatToggle');
+    var options=document.getElementById('chatOptions');
+    if(!toggle||!options)return;
+    toggle.addEventListener('click',function(){options.classList.toggle('open');});
+    document.addEventListener('click',function(e){if(!e.target.closest('.chat-widget'))options.classList.remove('open');});
+  })();
+  </script>
 
 </body>
 </html>

@@ -184,6 +184,148 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
   box-shadow: var(--shadow-lg);
 }
 
+.btn-lg {
+  padding: 18px 40px;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.15);
+  font-size: 0.9rem;
+  padding: 10px 24px;
+}
+
+.btn-ghost:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.05);
+}
+
+.hero-buttons-secondary {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* --- Sticky Mobile CTA --- */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 998;
+  padding: 12px 16px;
+  background: rgba(15,13,26,0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  display: none;
+}
+
+.sticky-cta.visible {
+  transform: translateY(0);
+}
+
+.sticky-cta .btn {
+  width: 100%;
+  justify-content: center;
+  padding: 14px 24px;
+}
+
+/* --- Chat Widget (WhatsApp/Viber) --- */
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 997;
+}
+
+.chat-toggle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--gradient);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(124,58,237,0.4);
+  transition: all var(--transition);
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.chat-toggle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 28px rgba(124,58,237,0.5);
+}
+
+.chat-toggle svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+}
+
+.chat-options {
+  position: absolute;
+  bottom: 68px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+.chat-options.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.chat-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.chat-option:hover {
+  transform: translateX(-4px);
+}
+
+.chat-option svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.chat-option.whatsapp {
+  background: #25D366;
+  color: #fff;
+}
+
+.chat-option.viber {
+  background: #7360F2;
+  color: #fff;
+}
+
 /* --- Header --- */
 .header {
   position: fixed;
@@ -1089,6 +1231,19 @@ a.portfolio-card {
     font-size: 1rem;
     padding: 14px 16px;
   }
+
+  .sticky-cta {
+    display: block;
+  }
+
+  .chat-widget {
+    bottom: 80px;
+  }
+
+  .sticky-cta.visible ~ .chat-widget,
+  .chat-widget.with-sticky {
+    bottom: 80px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1104,6 +1259,16 @@ a.portfolio-card {
   }
 
   .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-buttons-secondary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons-secondary .btn {
     width: 100%;
     justify-content: center;
   }
