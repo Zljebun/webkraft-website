@@ -435,6 +435,14 @@
         gtag('event','demo_click',{demo_name:a.textContent.trim(),link_url:a.href,link_location:'footer'});
       });
     });
+    // WhatsApp/Viber click tracking
+    document.querySelectorAll('.chat-option, a[href*="wa.me"], a[href*="viber://"]').forEach(function(a){
+      a.addEventListener('click',function(){
+        var method=a.href.indexOf('wa.me')>-1?'whatsapp':'viber';
+        var loc=a.closest('.chat-widget')?'chat_widget':'cta_section';
+        gtag('event','contact_click',{method:method,link_location:loc});
+      });
+    });
   }
   if(document.readyState==='complete')setTimeout(_wkTracking,100);
   else window.addEventListener('load',function(){setTimeout(_wkTracking,100);});

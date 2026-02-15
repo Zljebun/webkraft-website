@@ -360,6 +360,13 @@
     toggle.addEventListener('click',function(){options.classList.toggle('open');});
     document.addEventListener('click',function(e){if(!e.target.closest('.chat-widget'))options.classList.remove('open');});
   })();
+  document.querySelectorAll('.chat-option, a[href*="wa.me"], a[href*="viber://"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var method=a.href.indexOf('wa.me')>-1?'whatsapp':'viber';
+      var loc=a.closest('.chat-widget')?'chat_widget':'cta_section';
+      if(typeof gtag==='function')gtag('event','contact_click',{method:method,link_location:loc});
+    });
+  });
   </script>
 
 </body>
