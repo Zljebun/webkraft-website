@@ -1378,6 +1378,110 @@ a.portfolio-card {
 }
 
 /* ========================================
+   Mini Portfolio
+   ======================================== */
+
+.mini-portfolio {
+  padding: 48px 0 60px;
+  background: var(--dark);
+  text-align: center;
+  overflow: hidden;
+}
+
+.mini-portfolio-title {
+  color: var(--white);
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.mini-portfolio-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 28px;
+}
+
+.mini-portfolio-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 16px 16px;
+  scrollbar-width: none;
+}
+
+.mini-portfolio-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.mini-card {
+  flex: 0 0 160px;
+  scroll-snap-align: start;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  border: 1px solid var(--dark-border);
+}
+
+.mini-card:hover {
+  transform: scale(1.04);
+  border-color: var(--primary);
+}
+
+.mini-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.mini-card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 10px 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
+  text-align: left;
+}
+
+.mini-card-name {
+  display: block;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.85rem;
+  font-family: var(--font-heading);
+}
+
+.mini-card-type {
+  color: var(--primary-light);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.mini-portfolio-cta {
+  margin-top: 24px;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .mini-portfolio-scroll {
+    justify-content: center;
+    overflow-x: visible;
+    padding: 0;
+  }
+  .mini-card {
+    flex: 0 0 180px;
+  }
+  .mini-card img {
+    height: 230px;
+  }
+}
+
+/* ========================================
    Blog Styles
    ======================================== */
 
