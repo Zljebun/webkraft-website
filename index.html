@@ -33,13 +33,12 @@
     .faq{padding:80px 0}
     .faq-list{max-width:800px;margin:48px auto 0;display:flex;flex-direction:column;gap:12px}
     .faq-item{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;transition:border-color .2s}
-    .faq-item[open]{border-color:#7c3aed}
-    .faq-question{display:block;padding:20px 56px 20px 24px;cursor:pointer;font-weight:600;color:#fff;list-style:none;font-family:inherit;font-size:1rem;position:relative;text-align:left}
-    .faq-question::-webkit-details-marker{display:none}
-    .faq-question::marker{display:none}
-    .faq-question::after{content:'+';position:absolute;right:24px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:#7c3aed;transition:transform .3s;line-height:1}
-    details[open] .faq-question::after{transform:translateY(-50%) rotate(45deg)}
-    .faq-answer{padding:0 24px 20px;color:rgba(255,255,255,.6);line-height:1.7}
+    .faq-item.open{border-color:#7c3aed}
+    .faq-btn{display:flex;justify-content:space-between;align-items:center;width:100%;padding:20px 24px;background:none;border:none;color:#fff;font-weight:600;font-family:inherit;font-size:1rem;cursor:pointer;text-align:left;gap:16px}
+    .faq-icon{font-size:1.5rem;color:#7c3aed;transition:transform .3s;flex-shrink:0;line-height:1}
+    .faq-item.open .faq-icon{transform:rotate(45deg)}
+    .faq-body{display:none;padding:0 24px 20px;color:rgba(255,255,255,.6);line-height:1.7;text-align:left}
+    .faq-item.open .faq-body{display:block}
   </style>
   <script type="application/ld+json">
   {
@@ -513,34 +512,34 @@
       <h2 class="section-title">Često postavljana pitanja</h2>
       <p class="section-subtitle">Odgovori na najčešća pitanja naših klijenata.</p>
       <div class="faq-list">
-        <details class="faq-item">
-          <summary class="faq-question">Koliko košta izrada web stranice?</summary>
-          <div class="faq-answer">Cijena ovisi o paketu koji odaberete. Starter paket košta 250–350 KM, Standard 450–600 KM, a Premium 800–1.200 KM. Sve cijene su jednokratne uplate – nema skrivenih troškova ni mjesečnih naknada za hosting.</div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">Koliko dugo traje izrada sajta?</summary>
-          <div class="faq-answer">Standardno isporučujemo sajt u roku od 24–72 sata od potvrde narudžbe i dostavljenih materijala. Za kompleksnije projekte rok može biti nešto duži.</div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">Da li je hosting zaista besplatan?</summary>
-          <div class="faq-answer">Da, hosting je potpuno besplatan bez vremenskog ograničenja. Koristimo GitHub Pages koji je pouzdan, brz i besplatan za statične web stranice.</div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">Da li je sajt prilagođen mobilnim uređajima?</summary>
-          <div class="faq-answer">Da, svi naši sajtovi su u potpunosti responzivni. Izgledaju i funkcionišu savršeno na mobitelu, tabletu i desktopu.</div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">Da li dobijam SSL certifikat (HTTPS)?</summary>
-          <div class="faq-answer">Da, svaki sajt dolazi sa besplatnim SSL certifikatom (HTTPS). Ovo je uključeno u cijenu i osigurava sigurnost vaših posjetitelja.</div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">Šta ako trebam izmjene nakon isporuke?</summary>
-          <div class="faq-answer">Prvih 30 dana nakon isporuke nudimo besplatne sitne korekcije. Za dugoročnu podršku nudimo pakete održavanja od 30 do 80 KM mjesečno.</div>
-        </details>
-        <details class="faq-item">
-          <summary class="faq-question">Radite li sa klijentima iz inostranstva?</summary>
-          <div class="faq-answer">Da, radimo sa klijentima iz cijele regije i dijaspore u Austriji i Njemačkoj. Komunikacija je moguća na bosanskom, hrvatskom, srpskom, engleskom i njemačkom jeziku.</div>
-        </details>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">Koliko košta izrada web stranice?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-body">Cijena ovisi o paketu koji odaberete. Starter paket košta 250–350 KM, Standard 450–600 KM, a Premium 800–1.200 KM. Sve cijene su jednokratne uplate – nema skrivenih troškova ni mjesečnih naknada za hosting.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">Koliko dugo traje izrada sajta?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-body">Standardno isporučujemo sajt u roku od 24–72 sata od potvrde narudžbe i dostavljenih materijala. Za kompleksnije projekte rok može biti nešto duži.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">Da li je hosting zaista besplatan?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-body">Da, hosting je potpuno besplatan bez vremenskog ograničenja. Koristimo GitHub Pages koji je pouzdan, brz i besplatan za statične web stranice.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">Da li je sajt prilagođen mobilnim uređajima?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-body">Da, svi naši sajtovi su u potpunosti responzivni. Izgledaju i funkcionišu savršeno na mobitelu, tabletu i desktopu.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">Da li dobijam SSL certifikat (HTTPS)?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-body">Da, svaki sajt dolazi sa besplatnim SSL certifikatom (HTTPS). Ovo je uključeno u cijenu i osigurava sigurnost vaših posjetitelja.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">Šta ako trebam izmjene nakon isporuke?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-body">Prvih 30 dana nakon isporuke nudimo besplatne sitne korekcije. Za dugoročnu podršku nudimo pakete održavanja od 30 do 80 KM mjesečno.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false">Radite li sa klijentima iz inostranstva?<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-body">Da, radimo sa klijentima iz cijele regije i dijaspore u Austriji i Njemačkoj. Komunikacija je moguća na bosanskom, hrvatskom, srpskom, engleskom i njemačkom jeziku.</div>
+        </div>
       </div>
     </div>
   </section>
@@ -713,6 +712,22 @@
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(i) {
+          i.classList.remove('open');
+          i.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
       });
     });
 
