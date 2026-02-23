@@ -140,12 +140,46 @@
       margin-right: auto;
     }
 
+    .demos-midcta {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(249,115,22,0.08));
+      border: 1px solid rgba(124,58,237,0.3);
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+    }
+    .demos-midcta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .demos-midcta-text strong {
+      display: block;
+      font-size: 1.3rem;
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .demos-midcta-text span {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .demos-midcta-actions {
+      display: flex;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
     @media (max-width: 1024px) {
       .demos-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 768px) {
       .demos-grid { grid-template-columns: 1fr; max-width: 500px; margin-left: auto; margin-right: auto; }
       .demo-actions { flex-direction: column; }
+      .demos-midcta { padding: 28px 24px; }
+      .demos-midcta-inner { flex-direction: column; text-align: center; }
+      .demos-midcta-actions { width: 100%; }
+      .demos-midcta-actions .btn { flex: 1; justify-content: center; }
     }
   </style>
 </head>
@@ -271,6 +305,20 @@
           </div>
         </div>
 
+        <!-- Mid-page CTA -->
+        <div class="demos-midcta fade-in">
+          <div class="demos-midcta-inner">
+            <div class="demos-midcta-text">
+              <strong>Sviđa ti se nešto što si vidio?</strong>
+              <span>Javi nam se — besplatna konsultacija, bez obaveza. Od 250 KM, gotovo za 24h.</span>
+            </div>
+            <div class="demos-midcta-actions">
+              <a href="https://wa.me/436677970082" target="_blank" rel="noopener" class="btn btn-primary" style="background:#25D366;border-color:#25D366">WhatsApp</a>
+              <a href="viber://chat?number=%2B38765469565" target="_blank" rel="noopener" class="btn btn-primary" style="background:#7360F2;border-color:#7360F2">Viber</a>
+            </div>
+          </div>
+        </div>
+
         <!-- Studio M -->
         <div class="demo-card fade-in">
           <div class="demo-preview">
@@ -353,8 +401,8 @@
   <!-- CTA -->
   <section class="demos-cta">
     <div class="container">
-      <h2>Sviđa vam se nešto?</h2>
-      <p>Javite nam se i napravićemo web stranicu prilagođenu vašem biznisu.</p>
+      <h2>Spreman za svoj sajt?</h2>
+      <p>Od <strong style="color:#fff">250 KM</strong>, isporuka za <strong style="color:#fff">24h</strong>. Besplatan hosting, HTTPS i SEO uključeni. Javi nam se — konsultacija je besplatna.</p>
       <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
         <a href="./#kontakt" class="btn btn-white">Kontaktirajte nas</a>
         <a href="https://wa.me/436677970082" target="_blank" rel="noopener" class="btn btn-white" style="background:#25D366;border-color:#25D366;color:#fff">WhatsApp</a>
