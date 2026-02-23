@@ -34,6 +34,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="assets/css/style.min.css">
   <style>
+    .journey-strip{background:var(--surface);padding:52px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+    .journey-steps{display:flex;align-items:center;justify-content:center;gap:28px;margin-bottom:36px;flex-wrap:wrap}
+    .journey-step{display:flex;align-items:center;gap:14px}
+    .journey-num{width:46px;height:46px;border-radius:50%;background:var(--gradient);color:#fff;font-weight:800;font-size:1.1rem;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;flex-shrink:0}
+    .journey-text{display:flex;flex-direction:column;gap:2px}
+    .journey-text strong{color:var(--white);font-weight:700;font-size:1rem}
+    .journey-text span{color:var(--text-muted);font-size:0.8rem}
+    .journey-arrow{color:var(--primary);font-size:1.8rem;line-height:1}
+    @media(max-width:768px){.journey-arrow{display:none}.journey-steps{flex-direction:column;align-items:flex-start;gap:18px;padding:0 8px}}
     .faq{padding:80px 0;background:var(--dark)}
     .faq .section-title{color:#fff}
     .faq .section-subtitle{color:rgba(255,255,255,.7)}
@@ -221,11 +230,44 @@
     </div>
   </section>
 
+  <!-- 3-step journey strip -->
+  <section class="journey-strip">
+    <div class="container">
+      <div class="journey-steps">
+        <div class="journey-step">
+          <div class="journey-num">1</div>
+          <div class="journey-text">
+            <strong>Pogledaj primjere</strong>
+            <span>6 gotovih sajtova za razne djelatnosti</span>
+          </div>
+        </div>
+        <div class="journey-arrow">→</div>
+        <div class="journey-step">
+          <div class="journey-num">2</div>
+          <div class="journey-text">
+            <strong>Odaberi paket</strong>
+            <span>Od 250 KM, jednokratna uplata</span>
+          </div>
+        </div>
+        <div class="journey-arrow">→</div>
+        <div class="journey-step">
+          <div class="journey-num">3</div>
+          <div class="journey-text">
+            <strong>Gotovo za 24h</strong>
+            <span>Tvoj sajt je live — bez čekanja</span>
+          </div>
+        </div>
+      </div>
+      <a href="demos.html" class="btn btn-primary btn-lg" style="display:block;width:fit-content;margin:0 auto">Pogledaj primjere za tvoj biznis →</a>
+    </div>
+  </section>
+
   <!-- Mini Portfolio -->
   <section class="mini-portfolio">
     <div class="container">
-      <h2 class="mini-portfolio-title">Pogledajte naše radove</h2>
-      <p class="mini-portfolio-subtitle">6 gotovih sajtova za razne djelatnosti</p>
+      <h2 class="mini-portfolio-title">Ima nešto za svaki biznis</h2>
+      <p class="mini-portfolio-subtitle">Frizerski salon, restoran, autoservis, stomatolog... — pogledaj i odaberi</p>
+      <a href="demos.html" class="btn btn-outline mini-portfolio-cta" style="display:block;width:fit-content;margin:0 auto 28px">Pogledaj sve sa cijenama →</a>
       <div class="mini-portfolio-scroll">
         <a href="https://zljebun.github.io/stomatolog-demo/" target="_blank" class="mini-card">
           <img src="assets/images/demos/dentvita.webp" alt="DentVita - stomatološka ordinacija" width="400" height="518" loading="lazy">
