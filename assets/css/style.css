@@ -818,18 +818,26 @@ a.portfolio-card {
 
 .portfolio-thumb {
   width: 100%;
-  aspect-ratio: 16/10;
-  background: #1a5cb5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: 62.5%; /* 10/16 ratio */
+  height: 0;
+  position: relative;
   overflow: hidden;
+  background: #e8e8e8;
 }
 
 .portfolio-thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top left;
+  display: block;
+}
+
+.portfolio-thumb.thumb-center img {
+  object-position: center top;
 }
 
 .portfolio-thumb .placeholder {
